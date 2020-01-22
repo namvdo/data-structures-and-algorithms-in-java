@@ -57,7 +57,10 @@ public class CircularlyLinkedList <E> {
         size--;
         return head.getElement(); // returns the element just has been removed
     }
-    public static void main(String []args){
+}
+
+class Main{
+     public static void main(String []args){
         CircularlyLinkedList circularList = new CircularlyLinkedList<>(); // tested object
         System.out.println(circularList.size());
         Object[] numbers = { 1, 2, 3, 4, 5, 6 };
