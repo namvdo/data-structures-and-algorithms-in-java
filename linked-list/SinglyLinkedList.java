@@ -49,7 +49,10 @@ public class SinglyLinkedList<E> {
         }
         return answer;
     }
-    public static void main(String[] args){
+}
+
+class Main{
+     public static void main(String[] args){
         SinglyLinkedList singlyList = new SinglyLinkedList(); // tested object
         singlyList.addFirst(2);
         singlyList.addFirst(3);
