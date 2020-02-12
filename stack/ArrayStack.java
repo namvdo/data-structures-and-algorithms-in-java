@@ -1,4 +1,5 @@
-public interface Stack<E> {
+package stack;
+interface Stack<E> {
     // number of elements in the stack.
     int size();
 
