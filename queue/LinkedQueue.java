@@ -1,5 +1,4 @@
 package queue;
-import java.util.LinkedList;
 import java.util.List;
 interface Queue<E> {
     int size(); // size of the queue
