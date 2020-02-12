@@ -1,3 +1,4 @@
+package recursion;
 public class EnglishRuler {
     /** Draws an English ruler for the given number of inches and major tick length. */
     public static void drawRuler(int nInches, int majorLength){
