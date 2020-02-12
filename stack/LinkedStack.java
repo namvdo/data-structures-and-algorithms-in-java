@@ -1,4 +1,5 @@
-public interface Stack<E> {
+package stack;
+interface Stack<E> {
     // number of elements in the stack.
     int size();
 
@@ -17,7 +18,7 @@ public interface Stack<E> {
 
 public class LinkedStack<E> implements Stack<E> {
     public class SinglyLinkedList<E> {
-        private static class Node<E> { // private Node class for SinglyLinkedList
+        private class Node<E> { // private Node class for SinglyLinkedList
             private E element;
             private Node<E> next;
 
@@ -117,7 +118,7 @@ public class LinkedStack<E> implements Stack<E> {
     }
 
     public E top() {
-        return list.getFirst();
+        return list.first();
     }
 
     public E pop() {
