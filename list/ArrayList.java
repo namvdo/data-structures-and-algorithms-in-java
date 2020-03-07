@@ -31,17 +31,6 @@ public class ArrayList<E> implements List<E>{
         data = (E[]) new Object[capacity];
     }
 
-    /** Utility method
-     * checks whether the index is not permitted, the first argument is the index, second argument is the size of the array
-     * @param i
-     * @param n
-     * @throws IndexOutOfBoundsException
-     */
-    protected void checkIndex(int i, int n) throws IndexOutOfBoundsException{
-        if(i < 0 || i >= n){
-            throw new IndexOutOfBoundsException("Illegal index " + i);
-        }
-    }
     /**
      * returns the size of the array
      */
@@ -78,8 +67,8 @@ public class ArrayList<E> implements List<E>{
      */
     public void add(int i, E e) throws IndexOutOfBoundsException, IllegalStateException{
         checkIndex(i, size + 1);
-        if(size == data.length){
-            throw new IllegalStateException("Array is full");
+        if(size == data.length){ // not enough capacity, so double the current capacity
+            resize(size * 2);
         }
         for(int j = data.length - 1; j >= i; j--){
             data[j] = data[j - 1];
@@ -101,6 +90,28 @@ public class ArrayList<E> implements List<E>{
         size--;
         return temp;
     }
+
+    /** Utility method
+     * checks whether the index is not permitted, the first argument is the index, second argument is the size of the array
+     * @param i
+     * @param n
+     * @throws IndexOutOfBoundsException
+     */
+    protected void checkIndex(int i, int n) throws IndexOutOfBoundsException{
+        if(i < 0 || i >= n){
+            throw new IndexOutOfBoundsException("Illegal index " + i);
+        }
+    }
+
+    protected void resize(int capacity){
+        E[] temp = (E[]) new Object[capacity];
+        for(int i = 0; i < size; i++){
+            temp[k] = data[k];
+        }
+        data = temp; // starts using the new array
+    }
+
+
 }
 
 
