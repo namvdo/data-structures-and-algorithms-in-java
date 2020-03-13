@@ -52,7 +52,7 @@ class BST<T extends Comparable<T>> {
   public void preOrderTraversal() {
       preOrder(root);
   }
-  /** Test in-order traversal */
+  /** Test pre-order traversal */
   public static void main(String[] args){
     BST tree = new BST();
     tree.add(7);
@@ -62,7 +62,6 @@ class BST<T extends Comparable<T>> {
     tree.add(9);
     tree.add(14);
     tree.preOrderTraversal();
-    /** Output: 8, 12, 14, 17, 24, 25, 26, 32 */
   }
 
 
