@@ -1,5 +1,3 @@
-import java.net.Socket;
-
 class BST<T extends Comparable<T>> {
   private Node root = null;
   private int nodeCount = 0;
