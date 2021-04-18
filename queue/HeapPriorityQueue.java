@@ -33,7 +33,7 @@ abstract class AbstractPriorityQueue<K, V> implements PriorityQueue<K, V> {
         private V v;
 
         public PQEntry(K key, V val) {
-            this.k = k;
+            this.k = key;
             this.v = val;
         }
 
