@@ -21,6 +21,7 @@ interface PriorityQueue<K, V> {
 class DefaultComparator<E> implements Comparator<E> {
 
     @Override
+    @SuppressWarnings("unchecked")
     public int compare(E o1, E o2) {
         return ((Comparable<E>) o1).compareTo(o2);
     }
@@ -33,7 +34,7 @@ abstract class AbstractPriorityQueue<K, V> implements PriorityQueue<K, V> {
         private V v;
 
         public PQEntry(K key, V val) {
-            this.k = k;
+            this.k = key;
             this.v = val;
         }
 
@@ -56,7 +57,7 @@ abstract class AbstractPriorityQueue<K, V> implements PriorityQueue<K, V> {
         }
     }
 
-    private Comparator<K> comp;
+    private final Comparator<K> comp;
 
     protected AbstractPriorityQueue(Comparator<K> c) {
         this.comp = c;
@@ -80,7 +81,7 @@ abstract class AbstractPriorityQueue<K, V> implements PriorityQueue<K, V> {
 }
 
 public class HeapPriorityQueue<K, V> extends AbstractPriorityQueue<K, V> {
-    private List<Entry<K, V>> heap = new ArrayList<>();
+    protected final List<Entry<K, V>> heap = new ArrayList<>();
 
     public HeapPriorityQueue() {
         super();
@@ -163,8 +164,7 @@ public class HeapPriorityQueue<K, V> extends AbstractPriorityQueue<K, V> {
     @Override
     public Entry<K, V> min() {
         if (isEmpty()) return null;
-        Entry<K, V> min = heap.get(0);
-        return min;
+        return heap.get(0);
     }
 
     @Override
@@ -176,4 +176,5 @@ public class HeapPriorityQueue<K, V> extends AbstractPriorityQueue<K, V> {
         downHeap(0);
         return min;
     }
+
 }
