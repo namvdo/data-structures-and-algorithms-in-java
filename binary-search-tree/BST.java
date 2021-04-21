@@ -126,20 +126,4 @@ public class BST<T extends Comparable<T>> {
         return node.element;
     }
 
-    public static void main(String[] args) {
-        BST<Integer> bst = new BST<>();
-        bst.add(12);
-        bst.add(4);
-        bst.add(13);
-        bst.add(7);
-        bst.add(28);
-        bst.add(72);
-        bst.add(1);
-        System.out.println("Is 12 in the tree? " + bst.containValue(12));
-        System.out.println("Is 47 in the tree? " + bst.containValue(47));
-        bst.display(bst.root);
-        System.out.println("The smallest value in the tree is: " + bst.smallest(bst.root));
-        System.out.println("The largest value in the tree is: " + bst.largest(bst.root));
-
-    }
 }

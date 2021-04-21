@@ -103,27 +103,5 @@ class BSTTraversal<T extends Comparable<T>> {
         postOrder(root);
     }
 
-    public static void main(String[] args) {
-        BSTTraversal<Integer> tree = new BSTTraversal<>();
-        tree.add(24);
-        tree.add(14);
-        tree.add(12);
-        tree.add(8);
-        tree.add(17);
-        tree.add(26);
-        tree.add(25);
-        tree.add(32);
-        System.out.println("In-order traversal: ");
-        tree.inOrderTraversal();
-        /** Output: 8 12 14 17 24 25 26 32  */
-        System.out.println();
-        System.out.println("Pre-order traversal: ");
-        tree.preOrderTraversal();
-        /** Output: 24 14 12 8 17 26 25 32  */
-        System.out.println();
-        System.out.println("Post-order traversal: ");
-        tree.postOrderTraversal();
-        /** Output: 14 12 8 17 26 25 32 24 */
-    }
 
 }
