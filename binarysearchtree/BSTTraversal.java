@@ -1,3 +1,5 @@
+package binarysearchtree;
+
 class BSTTraversal<T extends Comparable<T>> {
     private Node root = null;
     private int nodeCount = 0;

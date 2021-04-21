@@ -1,3 +1,5 @@
+package linkedlist;
+
 /***
  * The first node of this doubly linked list will be the header, then right after is the head, the last node of this node is the trailer, the node right before this node is the tail.
  * Adding or removing internal nodes will be implemented later.
@@ -71,22 +73,5 @@ public class DoublyLinkedList <E>{
         successor.setPrev(predecessor); // set the previous node the the prdecessor, which is the node before the node we want to remove
         size--;
         return node.getElement();
-    }
-}
-class Main { 
-    public static void main(String[] args){
-        DoublyLinkedList doublyList = new DoublyLinkedList<>(); // tested object
-        doublyList.addFirst("Some");
-        doublyList.addFirst("day");
-        doublyList.addFirst("we'll");
-        doublyList.addFirst("know");
-        doublyList.addLast("New Radicals");
-        System.out.println("The size of the list " + doublyList.size());
-        System.out.println("The head is " + doublyList.first());
-        System.out.println("The tail is " + doublyList.last());
-        System.out.println("The head with the element of " + doublyList.removeFirst() + " just has been removed");
-        System.out.println("The tail with the element of " + doublyList.removeLast() + " just has been removed");
-        System.out.println("The size of the list " + doublyList.size());
-        System.out.println("Is the list empty? " + doublyList.isEmpty());
     }
 }

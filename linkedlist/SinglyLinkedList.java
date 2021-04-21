@@ -1,5 +1,7 @@
+package linkedlist;
+
 public class SinglyLinkedList<E> {
-    private static class Node <E> { // private Node class for SinglyLinkedList
+    private static class Node <E> {
         private E element; 
         private Node<E> next;
         public Node(E e, Node<E> n){
@@ -51,18 +53,4 @@ public class SinglyLinkedList<E> {
     }
 }
 
-class Main{
-     public static void main(String[] args){
-        SinglyLinkedList singlyList = new SinglyLinkedList(); // tested object
-        singlyList.addFirst(2);
-        singlyList.addFirst(3);
-        singlyList.addFirst(4);
-        singlyList.addFirst(5);
-        singlyList.addFirst(6);
-        System.out.println("The first node of this lis is " + singlyList.first());
-        System.out.println("The last node of this list is " + singlyList.last());
-        System.out.println("This list is empty? " + singlyList.isEmpty());
-        System.out.println("The size of this list is " + singlyList.size());
-        System.out.println("Remove the first element of the list " + singlyList.removeFirst());
-    }
-}
+

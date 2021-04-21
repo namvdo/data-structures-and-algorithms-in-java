@@ -1,3 +1,5 @@
+package linkedlist;
+
 public class CircularlyLinkedList <E> {
     private static class Node <E> { // nested Node class 
         private E element; // reference to the element stored in this node

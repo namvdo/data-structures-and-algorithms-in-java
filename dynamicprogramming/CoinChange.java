@@ -1,3 +1,5 @@
+package dynamicprogramming;
+
 import java.util.List;
 
 public class CoinChange {
@@ -21,9 +23,4 @@ public class CoinChange {
 
     }
 
-    public static void main(String[] args) {
-        List<Integer> coins = List.of(1, 2, 5);
-        int amount = 10;
-        System.out.printf("Number of combinations that make up %d from the given coins are: %d\n", amount, numOfWays(amount, coins));
-    }
 }

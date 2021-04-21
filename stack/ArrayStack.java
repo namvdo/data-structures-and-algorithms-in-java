@@ -1,20 +1,4 @@
 package stack;
-interface Stack<E> {
-    // number of elements in the stack.
-    int size();
-
-    // tests whether stack is empty
-    boolean isEmpty();
-
-    // pushes element to the top of the stack
-    void push(E e);
-
-    // returns the top element of the stack, but don't remove it
-    E top();
-
-    // removes the top element of the stack, and return this element.
-    E pop();
-}
 
 public class ArrayStack<E> implements Stack<E> {
     public static final int CAPACITY = 1000; // default capacity

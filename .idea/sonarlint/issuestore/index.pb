@@ -3,3 +3,37 @@ L
 queue/HeapPriorityQueue.java,a/2/a235704844b79689c84a8b68ce3229e913d9158e
 U
 %queue/HeapAdaptablePriorityQueue.java,0/d/0d400692e80f4145e050ca23175ba2b9db065975
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+S
+#backtracking/StringPermutation.java,5/5/55a7b3b2b171562d43d9400a31de6bd6788dd28e
+J
+binarysearchtree/README.md,9/7/97cbb7ae7c1a553b70eec2a00431682046da7d8a
+R
+"binarysearchtree/BSTTraversal.java,5/e/5e7df28c669237bfe69dbb67144c3421e7fd00e4
+I
+binarysearchtree/BST.java,a/9/a91a9f347f2c0cf7ca2560939cc90849f5f94983
+R
+"dynamicprogramming/CoinChange.java,6/9/69a32b8cd6ee676526f359e9586c0b4132841126
+T
+$linkedlist/CircularlyLinkedList.java,e/a/ea44c68c176b0e8ce93fc8cbbd3a00ede6f1a2c3
+P
+ linkedlist/DoublyLinkedList.java,c/0/c0ffb1f9d2972500db575cc0f57089e91814bfeb
+J
+stack/HTMLTagsMatched.java,4/e/4e275305823a3a3326e93129149fe7db479b9c6e
+P
+ linkedlist/SinglyLinkedList.java,3/5/350810608290dafbe46aae232b3687a6eaa98615
+g
+7sorting/elementary-sorting-algorithms/CountingSort.java,7/b/7bde8acda946db778b50bd5fb6eeb2096e1694a6
+h
+8sorting/elementary-sorting-algorithms/InsertionSort.java,0/c/0ccf8657d50389916a025c521b2d37852f7cae59
+h
+8sorting/elementary-sorting-algorithms/SelectionSort.java,0/1/01d1650af0995258d89e395de5a512c30102fbf3
+F
+stack/LinkedStack.java,8/c/8c61ad4c5f0e46cd38a1a459a6e7ad0b24312ee4
+e
+5sorting/elementary-sorting-algorithms/BubbleSort.java,a/b/ab09f62c752989b6dd00b3730a9cd8b29b2eca2e
+E
+stack/ArrayStack.java,8/b/8b1a2a46688b5cac558bc9be4ea45619b620f843
+M
+binarysearchtree/TreeMap.java,4/9/4960d85c9d65dd718763e8ec4504d1194cb6465f
