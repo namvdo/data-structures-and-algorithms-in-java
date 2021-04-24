@@ -35,5 +35,5 @@ e
 5sorting/elementary-sorting-algorithms/BubbleSort.java,a/b/ab09f62c752989b6dd00b3730a9cd8b29b2eca2e
 E
 stack/ArrayStack.java,8/b/8b1a2a46688b5cac558bc9be4ea45619b620f843
-M
-binarysearchtree/TreeMap.java,4/9/4960d85c9d65dd718763e8ec4504d1194cb6465f
+S
+#textprocessing/PatternMatching.java,6/a/6ad575dae56ab037ab30f653f0d22e5cde579208
