@@ -134,7 +134,7 @@ public class HeapPriorityQueue<K, V> extends AbstractPriorityQueue<K, V> {
             if (compare(heap.get(leftIdx), heap.get(rightIdx)) > 0) {
                 smallerChildIdx = rightIdx;
             }
-            if (compare(heap.get(smallerChildIdx), heap.get(j)) >- 0) {
+            if (compare(heap.get(smallerChildIdx), heap.get(j)) > 0) {
                 break;
             }
             swap(smallerChildIdx, j);
