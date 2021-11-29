@@ -1,4 +1,5 @@
 package queue;
+import java.util.LinkedList;
 import java.util.List;
 interface Queue<E> {
     int size(); // size of the queue
@@ -9,8 +10,7 @@ interface Queue<E> {
 }
 
 public class LinkedQueue<E> implements Queue<E> {
-    private List<E> list = new LinkedList<>(); // empty list
-    public LinkedQueue() {}
+    private final List<E> list = new LinkedList<>(); // empty list
     public int size() {  return list.size(); }
     public boolean isEmpty() { return list.isEmpty(); }
     public void enqueue(E e) {

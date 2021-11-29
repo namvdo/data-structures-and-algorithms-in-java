@@ -83,9 +83,7 @@ public class ArrayList<E> implements List<E>{
     public E remove(int i) throws IndexOutOfBoundsException{
         checkIndex(i, size);
         E temp = data[i];
-        for(int k = i; k < size - 1; k++){
-            data[k] = data[k + 1];
-        }
+        if (size - 1 - i >= 0) System.arraycopy(data, i + 1, data, i, size - 1 - i);
         data[size - 1] = null;
         size--;
         return temp;
@@ -105,9 +103,7 @@ public class ArrayList<E> implements List<E>{
 
     protected void resize(int capacity){
         E[] temp = (E[]) new Object[capacity];
-        for(int i = 0; i < size; i++){
-            temp[k] = data[k];
-        }
+        if (size >= 0) System.arraycopy(data, 0, temp, 0, size);
         data = temp; // starts using the new array
     }
 
